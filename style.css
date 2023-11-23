@@ -57,19 +57,41 @@
     height: 20px;
 }
 
-
+/* Style ex 6-7-8 */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+/* Esercizio 6 */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
 
+/* Esercizio 7 */
+.ex-7-img:hover{
+    transition: all 4s;
+    filter: grayscale(100%) blur(5px);
+}
 
+/* Esercizio 8 */
+.ex-8-img:hover{
+    transition: all 4s;
+    filter: brightness(300%) invert(90%);
+    border-radius: 50px;
+}
+
+/* Esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+.ex-9-img:hover{
+    transition: all 4s;
+    filter: drop-shadow(10px 10px 1px blue) contrast(50%);
+    border-radius: 50px;
+}
 
-
+/* Esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
 }
