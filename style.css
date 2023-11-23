@@ -95,10 +95,46 @@
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon{
+    animation: spin 4s linear infinite;
+}
 
+@keyframes spin{
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
+/* Esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
+}
+
+.ex-11-icon:hover{
+    animation: spin-back 4s linear infinite;
+}
+@keyframes spin-back{
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    75%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 
 .ex-12-button, .ex-13-button {
