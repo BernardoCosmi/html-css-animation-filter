@@ -89,6 +89,7 @@
     transition: all 4s;
     filter: drop-shadow(10px 10px 1px blue) contrast(50%);
     border-radius: 50px;
+    scale: 140%;
 }
 
 /* Esercizio 10 */
@@ -137,6 +138,7 @@
     }
 }
 
+/* File es 12-13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -166,3 +168,33 @@
     width: 60px;
     height: 20px;
 }
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation: slide_top 3s linear infinite;
+}
+@keyframes slide_top{
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+ }
+ .ex-12-button:hover .ex-12-bottom-white{
+    animation: slide_bottom 3s linear infinite;
+}
+@keyframes slide_bottom{
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+ }
